@@ -133,7 +133,7 @@ def run(args):
         "task": args.task,
         "metrics": metrics
     }
-    with open(args.output, "w") as f:
+    with open(args.output, "a+") as f:
         json.dump(dump, f)
     return 0
 
